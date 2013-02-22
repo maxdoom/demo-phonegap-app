@@ -6,17 +6,17 @@
         version   = "1.0.0">
 
     <!-- versionCode is optional and Android only -->
-
+    
     <name>Demo PhoneGap App</name>
-
+    
     <description>
         A Demo PhoneGap App. 
     </description>
-
+    
     <author href="http://maxdoom.com" email="info@maxdoom.com">
         Max Doom
     </author>
-
+    
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
     <preference name="stay-in-webview" value="true" />
@@ -31,5 +31,6 @@
     <feature name="http://api.phonegap.com/1.0/media"/>
     <feature name="http://api.phonegap.com/1.0/network"/>
     <feature name="http://api.phonegap.com/1.0/notification"/>
-
+    
+    <access origin="http://maxdoom.com" />
 </widget>
