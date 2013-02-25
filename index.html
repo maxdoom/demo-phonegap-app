@@ -1,57 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-	<title>maxdoom app</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-	<script type="text/javascript" language="javascript" charset="utf-8" src="http://code.jquery.com/jquery.min.js"></script>
-	<script type="text/javascript" language="javascript" charset="utf-8">
-	// <![CDATA[
-		//wait for PhoneGap to load
-		document.addEventListener("deviceready", loaded, false);
-		// PhoneGap is ready
-		function loaded() {
-		    startWatch();
-		}
-		// Start watching the acceleration
-		function startWatch() {
-		    // Update acceleration every 3 seconds
-		    var options = { frequency: 3000 };
-		    watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
-		}
-		// Stop watching the acceleration
-		function stopWatch() {
-		    if (watchID) {
-		        navigator.accelerometer.clearWatch(watchID);
-		        watchID = null;
-		    }
-		}
-		// Success
-		function onSuccess(acceleration) {
-		    var element = document.getElementById('accelerometer');
-		    element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
-		                        'Acceleration Y: ' + acceleration.y + '<br />' +
-		                        'Acceleration Z: ' + acceleration.z + '<br />' +
-		                        'Timestamp: '      + acceleration.timestamp + '<br />';
-		}
-		 // Error
-		function onError() {
-		    alert('onError!');
-		}
-		$( function(){
-			// on load ...
-		} );
-	// ]]>
-	</script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style type="text/css" media="screen">
-	/* <![CDATA[ */
-		
-	/* ]]> */
-	</style>
-</head>
-<body>
-	<div id="accelerometer">Waiting for accelerometer...</div>
-</body>
+<html>
+	<head>
+		<meta http-equiv="Refresh" content="0; url=http://www.maxdoom.com/static/index.html" />
+	</head>
+	<body>
+		<p>Please follow <a href="http://www.maxdoom.com/static/index.html">this link</a>.</p>
+	</body>
 </html>
